@@ -87,13 +87,29 @@
 
 = ((*"Gagnrath"*))
 
+= Gagnrathサンプル1
+
+  # image
+  # src = gagnrath1.png
+  # relative_width = 100
+
+(('note:Sample : http://ro.parrot-studio.com/rogvs'))
+
+= Gagnrathサンプル2
+
+  # image
+  # src = gagnrath2.png
+  # relative_width = 100
+
+(('note:Sample : http://ro.parrot-studio.com/rogvs'))
+
 = ((*Gagnrath*))のアーキテクチャ
 
 * Ruby2.0
 * Rails4(β1)
 * MariaDB 
 
-(('note:https://github.com/parrot-studio/gagnrath'))
+(('note:Source : https://github.com/parrot-studio/gagnrath'))
 
 = 結果
 
