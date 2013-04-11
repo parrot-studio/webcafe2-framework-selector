@@ -1,0 +1,19 @@
+---
+id: webcafe2
+base_name: framework-selector
+tags:
+- Ruby
+- Padrino
+- Rails
+presentation_date: 2013/04/14
+version: 2013.04.14
+licenses: []
+slideshare_id: 
+speaker_deck_id: 
+author:
+  markup_language: :rd
+  name: parrot-studio
+  email: parrot.studio.dev@gmail.com
+  rubygems_user: 
+  slideshare_user: parrotstudio
+  speaker_deck_user: parrotstudio

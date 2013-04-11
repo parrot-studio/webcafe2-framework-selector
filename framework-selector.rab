@@ -1,0 +1,125 @@
+= ぱろっと、\nPadrino\nやめるってよ
+
+# : subtitle
+: author
+    ぱろっと(@parrot_studio)
+: content-source
+   web community cafe #2
+: presentation-date
+   2013/04/14
+: theme
+   theme-webcafe2
+
+= ※やめません
+
+= 今の仕事は\n((*Padrino*))\nです
+
+= 提供するテーマ
+
+(('tag:x-large:アーキテクチャの((*選び方*))'))
+
+= 以前紹介した((*ROGv*))
+
+  # image
+  # src = rogv.png
+  # relative_width = 70
+
+(('note:http://blog.parrot-studio.com/2012/05/gunmaweb9-you-can-create/'))
+
+= 最初の仕様:ver1.0
+
+ * データ受付API
+ * 現在の戦況表示画面
+ * データは最新のもののみ保持
+
+= "((*Sinatra*))で十分"
+
+= ver1.0のアーキテクチャ
+
+ * Ruby1.9.x
+ * Sinatra
+ * データはファイルに保存
+
+= その後の仕様:ver2.0〜
+
+ * 履歴をMongoDBに保持
+ * 履歴の確認
+ * データの解析機能
+ * データ肥大による高速化要求
+
+= "Railsを使うほど\n大きくはないが、\nSinatraでは\n構造化が難しい"
+
+= よろしい、\nならば((*Padrino*))だ\n( ﾟДﾟ)y─~~
+
+= ver2.0以降のアーキテクチャ
+
+ * Ruby1.9.x
+ * Padrino
+ * MongoDB
+
+= 転機：ver5.0
+
+ * 新ギルド戦対応
+ * 日付をまたいだデータ解析
+
+= その結果・・・
+
+ * 重い(´･ω･`)
+ * 複雑化した構造
+
+= 追い打ち1
+
+  # image
+  # src = ruby2.png
+  # relative_width = 90
+
+(('note:http://www.ruby-lang.org/ja/news/2013/02/24/ruby-2-0-0-p0-is-released/'))
+
+= 追い打ち2
+
+  # image
+  # src = webdb73.jpg
+  # relative_width = 35
+
+= 設計をやり直すか\n(´-ω-)
+
+= そして完成
+
+= ((*"Gagnrath"*))
+
+= ((*Gagnrath*))のアーキテクチャ
+
+* Ruby2.0
+* Rails4(β1)
+* MariaDB 
+
+(('note:https://github.com/parrot-studio/gagnrath'))
+
+= 結果
+
+ * 速いΣ(ﾟДﾟ；≡；ﾟдﾟ)
+ * 一から見直したことで\n構造もシンプルに(｀･ω･´) ｂ
+
+= 素朴な疑問
+
+= "だったら、\n((*最初から*))\nそうすべきだったのでは？"
+
+= そうは言うがな大佐・・・
+
+ * 複雑化したのは「結果」
+ * すでに運用しているシステムを一から作り直すというコスト
+ * どんどんバージョンUPする\n言語/フレームワーク
+ * 新しい技術の出現
+   * Scala+Play etc...
+
+= But...
+
+ * 最初からスタンダードを選んでおけば移行コストはいらないのでは？
+ * 「枯れた技術」を使えばコストを下げられるのでは？
+ * 個人的なシステムだったからいいけど、仕事のシステムならばどうか？
+
+= というわけで
+
+= アーキテクチャの\n選び方
+
+= どう思いますか(´･ω･)？
